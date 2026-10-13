@@ -10,12 +10,20 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style> 
+                header,nav,footer{
+                    background-image:url('img/gradientback.png');
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size: 100% 100%;
+                } 
+        </style>
     </head>
     <body>
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#!">Cele On The Sax</a>
+                <h4 class="navbar-brand" href="#!" font-style="oblique">Cele On The Sax</h4>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -26,15 +34,17 @@
             </div>
         </nav>
         <!-- Page header with logo and tagline-->
-        <header class="py-5 bg-light border-bottom mb-4">
-            <div class="container">
-                <div class="text-center my-5">
-                    <h1 class="fw-bolder">Celeste De Vito</h1>
-                    <p class="lead mb-0">Alto Saxophonist</p>
+        <header class="py-5 border-bottom mb-4">
+                <div class="container">                
+                    <div class="text-center my-5">
+                        <h1 class="fw-bolder">Celeste De Vito</h1>
+                        <h3 class="lead mb-0">Saxophonist, Composer</h3>
+                    </div>
                 </div>
-            </div>
+            </header>
         </header>
         <!-- Page content-->
+
         <div class="container">
             <div class="row">
                 <!-- Blog entries-->
@@ -43,15 +53,30 @@
                     <div class="card mb-4">
                         <a href="#!"><img class="card-img-top" src=img/Canada-Day.png alt="..." /></a>
                         <div class="card-body">
-                            <h2 class="card-title">This Website is Under Construction!</h2>
+                            <body><small><i>Photo: Adam Hornostaj</i></small></body>
                         </div>
                     </div>
+                    <div class="container">
+                        <div class="text-center py-5">
+                            <p style="font-family:'Consola', monospace"><strong>Celeste De Vito</strong> is a saxophonist and composer based in Kitchener Ontario. She is finishing a bachelor of arts degree at Wilfrid Laurier, having studied with Dave Wiffen, Adrean Ferrugia, and Kevin Day. On top of her performances with Laurier's Jazz Orchestra, she has played alongside Amanda Braam and the Paper Cranes at both the Jazz Room and Waterloo's Canada Day event.</p>
+                            <p style="font-family:'Consola', monospace">She composes for a variety of mediums, with pieces of hers being performed by the Laurier Jazz Orchestra and featured in workshops ran by the KW Symphony. She also experiments in electronic ambient styles.</p>
+                        </div>
+                    </div>
+                <!-- Pagination-->
+                        <hr class="my-0" />
+                        <ul class="pagination justify-content-center my-4">
+                        </ul>
+                </div>
                 <!-- Side widgets-->
                 <div class="col-lg-4">
                     <!-- Side widget-->
                     <div class="card mb-4">
-                        <div class="card-header">Contact Me</div>
-                        <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+                        <div class="card-header h5"><b>Contact Me</b></div>
+                        <div class="card-body">Email:
+                            <a href="mailto:celestedevito04@gmail.com">celestedevito04@gmail.com</a>
+                        </div>
+                        <div class="card-body">Instagram:
+                            <a href="https://www.instagram.com/cele.on.the.sax/">cele.on.the.sax</a>
                     </div>
                 </div>
             </div>

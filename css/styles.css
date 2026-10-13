@@ -117,6 +117,9 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+  font-family:'Courier New', Courier, monospace;
+  font-style: bold;
+  color: white;
 }
 
 h1, .h1 {
@@ -147,11 +150,12 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: calc(1rem + 0.3vw);
+  font-style: oblique;
 }
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -639,6 +643,17 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+}
+
+.block {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+  justify-content:flex-start;
 }
 
 @media (min-width: 576px) {
@@ -4227,7 +4242,7 @@ textarea.form-control-lg {
   padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
   margin-bottom: 0;
   color: var(--bs-card-cap-color);
-  background-color: var(--bs-card-cap-bg);
+  background-image: img('img/gradientback.png');
   border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
 }
 .card-header:first-child {
@@ -8204,9 +8219,8 @@ textarea.form-control-lg {
   --bs-bg-opacity: 1;
 }
 
-.bg-gradient {
-  background-image: var(--bs-gradient) !important;
-}
+
+
 
 .user-select-all {
   -webkit-user-select: all !important;
